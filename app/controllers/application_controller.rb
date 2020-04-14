@@ -1,3 +1,3 @@
 class ApplicationController < ActionController::Base
-	http_basic_authenticate_with name: 'sammy', password: 'shark', except: [:index, :show]
+	protect_from_forgery with: :exception
 end
